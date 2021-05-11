@@ -32,19 +32,15 @@ origi ={
     lgt:""
 }
 
-console.log("_______________________");
-async function dr(){
-    var v = await ori.calc();
-    
-}
-console.log("_______________________");
 
 
-dr();
 
 //console.log(cities.data[0]);
-module.exports.distan = ori.calc('vadodara').then(v=>{
-   console.log(v);
+  const distan =  async(address)=>{
+
+     //  ori.calc(address).then(v=>{
+        const v = await ori.calc(address); 
+        console.log(v); 
     var array = [];
     let min = 999999999;
     let addd="";
@@ -134,17 +130,15 @@ module.exports.distan = ori.calc('vadodara').then(v=>{
             resolve(data);
         }); 
 
-        router.get('',(req,res)=>{
-            res.send(data);
-        });
 
         return new Promise((resolve,reject)=>{
             resolve(d);
         });
 
   
-    })
-
+   // })
+}
+    module.exports.distan = distan;
 //var orig = origg();
 //console.log(orig);
 //console.log(ori);

@@ -47,12 +47,54 @@ map.on('load', function () {
             'type': 'Feature',
                 'geometry': {
                 'type': 'Point',
-                'coordinates': [73.36,22.50]
+                'coordinates': [{{o.coo2}},{{o.coo1}}]
                 },
                 'properties': {
-                'title': 'samta'
+                'title': '{{o.title}} - {{o.item}}'
+                
+                }
+             },
+             {
+            'type': 'Feature',
+                'geometry': {
+                'type': 'Point',
+                'coordinates': [{{tt.coo2}},{{tt.coo1}}]
+                },
+                'properties': {
+                'title': '{{tt.title}} - {{tt.item}}'
+                }
+             },
+              {
+            'type': 'Feature',
+                'geometry': {
+                'type': 'Point',
+                'coordinates': [{{th.coo2}},{{th.coo1}}]
+                },
+                'properties': {
+                'title': '{{th.title}} - {{th.item}}'
+                }
+             },
+              {
+            'type': 'Feature',
+                'geometry': {
+                'type': 'Point',
+                'coordinates': [{{fr.coo2}},{{fr.coo1}}]
+                },
+                'properties': {
+                'title': '{{fr.title}} - {{fr.item}}'
+                }
+             },
+              {
+            'type': 'Feature',
+                'geometry': {
+                'type': 'Point',
+                'coordinates':[{{fv.coo2}},{{fv.coo1}}]
+                },
+                'properties': {
+                'title': '{{fv.title}} - {{fv.item}}'
                 }
              }
+              
          ]
         
         }
